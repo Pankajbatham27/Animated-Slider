@@ -1,0 +1,240 @@
+.fullContainer {
+  height: 100dvh;
+  width: 100dvw;
+  position: relative;
+  overflow: hidden;
+}
+.topText {
+  font-family: "Audiowide", sans-serif;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12em;
+  color: #000;
+  opacity: 0.3;
+}
+
+.mainText {
+  font-family: "Audiowide", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12em;
+  /* color: #31e98e; */
+  z-index: 1;
+}
+
+.lowerText {
+  font-family: "Audiowide", sans-serif;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15em;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.lowerTextReverse {
+  font-family: "Audiowide", sans-serif;
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(-1);
+  font-size: 16em;
+  color: #fff;
+  opacity: 0.1;
+  display: inline-block;
+}
+
+.polygonOuter {
+  fill: transparent;
+  stroke-width: 0.2;
+  stroke-dasharray: 80, 5;
+}
+.polygonInner {
+  fill: transparent;
+  stroke-width: 0.2;
+  stroke-dasharray: 70, 15;
+}
+.haxaGon {
+  height: 144vh;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.haxaGonInner {
+  height: 129vh;
+  width: 75vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+.Avatar {
+  position: absolute;
+  height: 800px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+}
+
+.Avatar img {
+  width: 100%;
+  height: 100%;
+}
+.bottomSmoke {
+  position: absolute;
+  bottom: -331px;
+  left: -162px;
+  right: -170px;
+  z-index: 0;
+  transform: scale(1.2);
+}
+
+.bottomSmoke img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottomSmokeCopy {
+  position: absolute;
+  bottom: -545px;
+  left: -162px;
+  right: -170px;
+  z-index: 1;
+}
+
+.bottomSmokeCopy img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.8);
+  opacity: 0.5;
+  transform: scale(-1);
+}
+
+.bottomLeftText {
+  position: absolute;
+  width: 379px;
+  bottom: 61px;
+  left: 66px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.bottomLeftText h1 {
+  font-size: 67px;
+  text-shadow: 1px 2px 5px #00000073;
+}
+
+.bottomLeftText p {
+  color: #fff;
+  text-align: justify;
+}
+
+.controles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 14%;
+  right: 14%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+
+.AvatarSlideFromLeft{
+    animation: animationLeftToCenter 1s ease-in-out forwards;
+}
+
+.NameSlideFromRight{
+    animation: animationRightToCenter 1s ease-in-out forwards;
+}
+
+.animationForSmoke{
+    animation: animationForSmoke 1s ease-in-out forwards;
+}
+
+.boxForAnimation{
+    position: relative;
+    top: 0;
+    animation: boxForAnimation 1s ease-in-out forwards;
+}
+
+@keyframes animationLeftToCenter {
+    0%  {
+        transform: translate(100%, 0%);
+    }
+    50% {
+        transform: translate(-80%, 0%);
+    }
+    80% {
+        transform: translate(-48%, 0%);
+    }
+    100% {
+        transform: translate(-50%, 0%);
+    }
+}
+
+@keyframes animationRightToCenter {
+    0%  {
+        transform: translate(-200%, -50%);
+    }
+    50% {
+        transform: translate(-35%, -50%);
+    }
+    80% {
+        transform: translate(-52%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@keyframes animationForSmoke {
+    0%  {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.3); 
+    }
+    80% {
+        transform: scale(1.18);
+    }
+    100% {
+        transform: scale(1.2); 
+    }
+}
+
+@keyframes boxForAnimation {
+    0%  {
+        top: 20px;
+    
+    }
+    50% {
+        top: -45px;
+    }
+    80% {
+        top: 20px;
+    }
+    100% {
+        top: 0px; 
+    }
+}
+
+
+
